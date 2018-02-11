@@ -19,7 +19,7 @@ import java.util.List;
  * @author srinivaik
  */
 public class Client {
-    private static final String SECRET_TOKEN = "AllowAccess";
+    private static final String SECRET_TOKEN = "Allow Access";
     private static final String USERNAME = "Bruce Wayne";
     private static final String PASSWORD = "Bruce Wayne";
     private static final String DEPARTURE_CITY = "Gotham";
@@ -37,13 +37,13 @@ public class Client {
         else {
             System.out.println("Authentication Test Failed");
         }
-       /* if(FindItinTest()){
+        if(FindItinTest()){
             System.out.println("Itinerary Found");
         }
         else {
             System.out.println("FindItin Test Failed");
         }
-        */
+        
         if(BookItinTest()){
             System.out.println("Itinerary Booked");
         }
@@ -83,10 +83,10 @@ public class Client {
         
         return false;
     }
-/*
+
     private static boolean FindItinTest() {
         try {
-            boolean okIntineary = getItineraries(SECRET_TOKEN, DEPARTURE_CITY, DESTINATION_CITY, DATE).isEmpty() == false;
+            boolean okIntineary = getItineraries(SECRET_TOKEN, DEPARTURE_CITY, DESTINATION_CITY, DATE).equals("") == false;
             boolean failedAuth = false;
             try {
                  getItineraries("NotSecretToken", DEPARTURE_CITY, DESTINATION_CITY, DATE);
@@ -94,9 +94,9 @@ public class Client {
             catch (UnauthorizedException_Exception e) {
                 failedAuth = true;
             }
-            boolean failDepartureIntineary = getItineraries(SECRET_TOKEN, "NotOkCity", DESTINATION_CITY, DATE).isEmpty();
-            boolean failDestinationIntineary = getItineraries(SECRET_TOKEN, DEPARTURE_CITY, "NotOkCity", DATE).isEmpty();
-            boolean failDateIntineary = getItineraries(SECRET_TOKEN, DEPARTURE_CITY, DESTINATION_CITY, "NotOkDate").isEmpty();
+            boolean failDepartureIntineary = getItineraries(SECRET_TOKEN, "NotOkCity", DESTINATION_CITY, DATE).equals("");
+            boolean failDestinationIntineary = getItineraries(SECRET_TOKEN, DEPARTURE_CITY, "NotOkCity", DATE).equals("");
+            boolean failDateIntineary = getItineraries(SECRET_TOKEN, DEPARTURE_CITY, DESTINATION_CITY, "NotOkDate").equals("");
             
             return okIntineary && failedAuth && failDepartureIntineary && failDestinationIntineary && failDateIntineary;
         } catch (Exception ex) {
@@ -105,7 +105,7 @@ public class Client {
         
         return false;
     }
-*/
+
     private static boolean BookItinTest() {
 try {
             com.services.topdown.Itinerary itinerary = new com.services.topdown.Itinerary();

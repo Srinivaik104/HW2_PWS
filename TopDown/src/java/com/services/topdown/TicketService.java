@@ -16,7 +16,7 @@ import se.com.topdown.Ticket;
  */
 class TicketService {
 
-    public static final String SECRET_TOKEN = "AllowAcess";
+    public static final String SECRET_TOKEN = "Allow Access";
     private static Map<String, Ticket> tickets;
     public TicketService(){
     }

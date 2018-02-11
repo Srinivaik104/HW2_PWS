@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/Users/srinivaik/NetBeansProjects/TopDown/web/WEB-INF/FlightReservationServiceTD.wsdl" uri="src/conf/xml-resources/web-services/TopDownService/wsdl/FlightReservationServiceTD.wsdl"/>
+    <system systemId="file:/Users/srinivaik/NetBeansProjects/TopDown/web/WEB-INF/FlightReservationServiceTD.xsd" uri="src/conf/xml-resources/web-services/TopDownService/wsdl/FlightReservationServiceTD.xsd"/>
+    <system systemId="file:/Users/srinivaik/NetBeansProjects/TopDownServer/web/WEB-INF/FlightReservationServiceTD.wsdl" uri="src/conf/xml-resources/web-services/TopDownService/wsdl/FlightReservationServiceTD.wsdl"/>
+    <system systemId="file:/Users/srinivaik/NetBeansProjects/TopDownServer/web/WEB-INF/FlightReservationServiceTD.xsd" uri="src/conf/xml-resources/web-services/TopDownService/wsdl/FlightReservationServiceTD.xsd"/>
+    <system systemId="file:/Users/srinivaik/NetBeansProjects/TopDown/WSDL/FlightResTD.wsdl" uri="src/conf/xml-resources/web-services/TopDownService/wsdl/FlightResTD.wsdl"/>
+    <system systemId="file:/Users/srinivaik/NetBeansProjects/TopDown/WSDL/FlightResTD.xsd" uri="src/conf/xml-resources/web-services/TopDownService/wsdl/FlightResTD.xsd"/>
+</catalog>
